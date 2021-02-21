@@ -113,7 +113,7 @@ Alcohol (Louisiana), speeding (Alaska), fatal accidents > 1 (West Virginia)
   * It is critical that the nation adopt traffic safety improvements that will make our roads and highways safer by focusing on below states:
 
 
-|Rank|Alcohol|Speeding|Fatal Accidents >1|
+|<code>Rank</code>|<code>Alcohol</code>|<code>Speeding</code>|<code>Fatal Accidents >1</code>|
 |:---:|:-------:|:-------:|:-------:|
 |1|Montana|Montana|Kentucky|
 |2|North Dakota|South Carolina| South Carolina|
