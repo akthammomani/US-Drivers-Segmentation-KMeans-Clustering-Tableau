@@ -123,6 +123,12 @@ Alcohol (Louisiana), speeding (Alaska), fatal accidents > 1 (West Virginia)
 |6||Louisiana||
 |7||West Virginia||
 
+![fatalities](https://user-images.githubusercontent.com/67468718/108630646-ae77f180-741a-11eb-8f87-c46e44c75a70.png)
+
+![segmentation](https://user-images.githubusercontent.com/67468718/108630651-afa91e80-741a-11eb-9f60-2fbe4c0f002f.png)
+
+
+
 
 
 
