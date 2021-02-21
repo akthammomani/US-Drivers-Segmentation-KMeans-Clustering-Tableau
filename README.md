@@ -16,3 +16,9 @@ To accomplish these tasks, we will make use of data wrangling, plotting, PCA (di
 ## 2. Dataset:
 
 The data given to us was originally collected by the National Highway Traffic Safety Administration and the National Association of Insurance Commissioners in <code>**2011**</code>. This particular dataset can be found in this [Location](https://github.com/fivethirtyeight/data/tree/master/bad-drivers) which was based in this [story](https://fivethirtyeight.com/features/which-state-has-the-worst-drivers/)
+
+## 3. Create a textual and a graphical summary of the data
+
+We now have an idea of what the dataset looks like. To further familiarize ourselves with this data, we will calculate summary statistics and produce a graphical overview of the data. The graphical overview is good to get a sense for the distribution of variables within the data and could consist of one histogram per column. It is often a good idea to also explore the pairwise relationship between all columns in the data set by using a using pairwise scatter plots (sometimes referred to as a "scatterplot matrix").
+
+![Pairplot](https://user-images.githubusercontent.com/67468718/108630648-af108800-741a-11eb-90e3-2cbabca082cd.png)
