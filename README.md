@@ -75,7 +75,62 @@ Now, let's define the following:-
 
  * **Elbow Method using Distortion from Scipy** confirms that the <code>**elbow point k=2**</code> so the <code>**best k will be=3**</code> (plot starts descending much more slowly after k=3)
  * **Elbow Method using Inertia from kmeans** confirms that the <code>**elbow point k=2**</code> so the <code>**best k will be=3**</code> (plot starts descending much more slowly after k=3)
- * **Elbow Method by calculating sum-of-squares error in each cluster against  𝐾 is similar when calculating .inertia from Kmeans** confirms that the <code>**elbow point k=2**</code> so the <code>**best k will be=3**</code> (plot starts descending much more slowly after k=3)
+ * **Elbow Method by calculating sum-of-squares error in each cluster against  𝐾 is similar when calculating .inertia from Kmeans** confirms that the <code>**elbow point k=2**</code> so the <code>**best k will be=3**</code> (plot starts descending much more slowly after k=3).
+
+
+## 9. Visualizing Clusters using PCA
+
+![pca_clusters_main](https://user-images.githubusercontent.com/67468718/108630650-afa91e80-741a-11eb-9a04-dc0e05162cac.png)
+
+## 10. Visualize the feature differences between the clusters
+
+Thus far, we have used both our visual interpretation of the data and the KMeans clustering algorithm to reveal patterns in the data, but what do these patterns mean?
+
+Remember that the information we have used to cluster the states into three distinct groups are the percentage of drivers speeding, under alcohol influence and that has not previously been involved in an accident. We used these clusters to visualize how the states group together when considering the first two principal components. This is good for us to understand structure in the data, but not always easy to understand, especially not if the findings are to be communicated to a non-specialist audience.
+
+A reasonable next step in our analysis is to explore how the three clusters are different in terms of the three features that we used for clustering. Instead of using the scaled features, we return to using the unscaled features to help us interpret the differences.
+
+![Clusters Distribution](https://user-images.githubusercontent.com/67468718/108630643-addf5b00-741a-11eb-8a3a-9f788a27254c.png)
+
+## 11. Extract Information - Clusters
+
+Now it is clear that different groups of states may require different interventions. Since resources and time are limited, it is useful to start off with an intervention in one of the three groups first. Which group would this be? To determine this, we will include data on how many miles are driven in each state, because this will help us to compute the total number of fatal accidents in each state. Data on miles driven is available in another tab-delimited text file. We will assign this new information to a column in the DataFrame and create a violin plot for how many total fatal traffic accidents there are within each state cluster.
+
+## 12. Conclusion
+
+  * Drivers Behavior – Unsupervised Machine Learning K-means Clustering (K=3)
+      * **“State Group 1”**
+Represents Drivers who had the greatest number of fatal collisions per billion miles of travel while speeding and under the influence of alcohol. Also, those drivers were the 2nd most involved in fatal accidents more than once. 
+Alcohol (Montana, North Dakota, South Carolina and Hawaii), speeding (Hawaii and Pennsylvania), fatal accidents > 1 (Alabama, S/N Carolina and Ohi0)
+      * **“State Group 2”** 
+Represents Drivers who had the least number of fatal collisions per billion miles of travel. Also, those drivers were the 1st most drivers involved in fatal accidents more than once. 
+fatal accidents > 1 (Kentucky 24% worst in the US) 
+      * **“State Group 3”** 
+Represents Drivers who had the 2nd number of fatal collisions per billion miles of travel mostly while speeding. Also, those drivers were the least drivers involved in fatal accidents more than once. 
+Alcohol (Louisiana), speeding (Alaska), fatal accidents > 1 (West Virginia)
+      * **“State Group 1”** should be the top priority of the authority to start implementing more strict safety measures that will make our roads and highways safer.
+      
+  * It is critical that the nation adopt traffic safety improvements that will make our roads and highways safer by focusing on below states:
+
+
+|Rank|Alcohol|Speeding|Fatal Accidents >1|
+|:---:|:-------:|:-------:|:-------:|
+|1|Montana|Montana|Kentucky|
+|2|North Dakota|South Carolina| South Carolina|
+|3|South Carolina|Hawaii| Montana|
+|4|Hawaii|Pennsylvania||
+|5|Louisiana|Alaska||
+|6||Louisiana||
+|7||West Virginia||
+
+
+
+
+
+
+
+
+
 
 
 
