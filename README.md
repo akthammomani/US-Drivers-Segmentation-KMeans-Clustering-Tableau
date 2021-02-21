@@ -1,5 +1,5 @@
 # Project:
-# Reducing Traffic Mortality in the USA using K-means Clustering Powered by Tableau
+# Reducing Traffic Mortality in the USA using K-Means Clustering Powered by Tableau
 
 How can we find a good stratgey for reducing traffic-related deaths?
 
