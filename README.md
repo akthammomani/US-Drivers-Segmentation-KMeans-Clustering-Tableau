@@ -22,3 +22,20 @@ The data given to us was originally collected by the National Highway Traffic Sa
 We now have an idea of what the dataset looks like. To further familiarize ourselves with this data, we will calculate summary statistics and produce a graphical overview of the data. The graphical overview is good to get a sense for the distribution of variables within the data and could consist of one histogram per column. It is often a good idea to also explore the pairwise relationship between all columns in the data set by using a using pairwise scatter plots (sometimes referred to as a "scatterplot matrix").
 
 ![Pairplot](https://user-images.githubusercontent.com/67468718/108630648-af108800-741a-11eb-90e3-2cbabca082cd.png)
+
+## 4. Quantify the association of features and accidents
+
+<p>We can already see some potentially interesting relationships between the target variable (the number of fatal accidents) and the feature variables (the remaining three columns).</p>
+<p>To quantify the pairwise relationships that we observed in the scatter plots, we can compute the Pearson correlation coefficient matrix. The Pearson correlation coefficient is one of the most common methods to quantify correlation between variables, and by convention, the following thresholds are usually used:</p>
+<ul>
+<li>0.2 = weak</li>
+<li>0.5 = medium</li>
+<li>0.8 = strong</li>
+<li>0.9 = very strong</li>
+</ul>
+
+![heatmap](https://user-images.githubusercontent.com/67468718/108630647-af108800-741a-11eb-9b2a-735a97cbd071.png)
+
+
+
+
