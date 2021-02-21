@@ -36,6 +36,49 @@ We now have an idea of what the dataset looks like. To further familiarize ourse
 
 ![heatmap](https://user-images.githubusercontent.com/67468718/108630647-af108800-741a-11eb-9b2a-735a97cbd071.png)
 
+## 5. Fit a multivariate linear regression
+
+From the correlation table, we see that the amount of fatal accidents is most strongly correlated with alcohol consumption (first row). But in addition, we also see that some of the features are correlated with each other, for instance, speeding and alcohol consumption are positively correlated. We, therefore, want to compute the association of the target with each feature while adjusting for the effect of the remaining features. This can be done using multivariate linear regression.
+
+Both the multivariate regression and the correlation measure how strongly the features are associated with the outcome (fatal accidents). When comparing the regression coefficients with the correlation coefficients, we will see that they are slightly different. The reason for this is that the multiple regression computes the association of a feature with an outcome, given the association with all other features, which is not accounted for when calculating the correlation coefficients.
+
+A particularly interesting case is when the correlation coefficient and the regression coefficient of the same feature have opposite signs. How can this be? For example, when a feature A is positively correlated with the outcome Y but also positively correlated with a different feature B that has a negative effect on Y, then the indirect correlation (A->B->Y) can overwhelm the direct correlation (A->Y). In such a case, the regression coefficient of feature A could be positive, while the correlation coefficient is negative. This is sometimes called a masking relationship. Let’s see if the multivariate regression can reveal such a phenomenon.
+
+## 6. Visualize the first two principal components
+
+The first two principal components enable visualization of the data in two dimensions while capturing a high proportion of the variation (79%) from all three features: speeding, alcohol influence, and first-time accidents. This enables us to use our eyes to try to discern patterns in the data with the goal to find groups of similar states. Although clustering algorithms are becoming increasingly efficient, human pattern recognition is an easily accessible and very efficient method of assessing patterns in data.
+
+We will create a scatter plot of the first principle components and explore how the states cluster together in this visualization.
+
+![PCA clusters](https://user-images.githubusercontent.com/67468718/108630649-afa91e80-741a-11eb-98f7-0281ba9f9e27.png)
+
+## 7. Modeliing: K-Means Clustering (Choosing K):
+
+The Elbow Method is one of the most popular methods to determine this optimal value of k.
+
+From the above visualization, we can see that the optimal number of clusters should be between 3-5. But visualizing the data alone cannot always give the right answer. Hence we demonstrate the following steps.
+
+Now, let's define the following:-
+
+ * **Distortion:** It is calculated as the average of the squared distances from the cluster centers of the respective clusters. Typically, **the Euclidean distance metric is used.**
+ * **Inertia:** it will be calaculated in two methods:
+   * It is the sum of squared distances of samples to their closest cluster center. Typically, **inertia_ attribute from kmeans is used.**
+   * Lastly, we look at the sum-of-squares error in each cluster against $K$. We compute the distance from each data point to the center of the cluster (centroid) to which the data point was assigned. 
+
+$$SS = \sum_k \sum_{x_i \in C_k} \sum_{x_j \in C_k} \left( x_i - x_j \right)^2 = \sum_k \sum_{x_i \in C_k} \left( x_i - \mu_k \right)^2$$
+
+where $x_i$ is a point, $C_k$ represents cluster $k$ and $\mu_k$ is the centroid for cluster $k$. We can plot SS vs. $K$ and choose the *elbow point* in the plot as the best value for $K$. The elbow point is the point at which the plot starts descending much more slowly. 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
