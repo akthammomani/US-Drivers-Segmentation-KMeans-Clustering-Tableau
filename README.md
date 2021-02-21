@@ -65,9 +65,22 @@ Now, let's define the following:-
    * It is the sum of squared distances of samples to their closest cluster center. Typically, **inertia_ attribute from kmeans is used.**
    * Lastly, we look at the sum-of-squares error in each cluster against $K$. We compute the distance from each data point to the center of the cluster (centroid) to which the data point was assigned. 
 
-$$SS = \sum_k \sum_{x_i \in C_k} \sum_{x_j \in C_k} \left( x_i - x_j \right)^2 = \sum_k \sum_{x_i \in C_k} \left( x_i - \mu_k \right)^2$$
+![Distortion_elbow](https://user-images.githubusercontent.com/67468718/108630644-ae77f180-741a-11eb-9d6e-a97850738b14.png)
 
-where $x_i$ is a point, $C_k$ represents cluster $k$ and $\mu_k$ is the centroid for cluster $k$. We can plot SS vs. $K$ and choose the *elbow point* in the plot as the best value for $K$. The elbow point is the point at which the plot starts descending much more slowly. 
+![elbow_inertia](https://user-images.githubusercontent.com/67468718/108630645-ae77f180-741a-11eb-80b5-1b4ea00f27b2.png)
+
+![SSE_elbow](https://user-images.githubusercontent.com/67468718/108630652-b041b500-741a-11eb-84d5-697b7526cef0.png)
+
+## 8. Choosing K Summary:
+
+ * **Elbow Method using Distortion from Scipy** confirms that the <code>**elbow point k=2**</code> so the <code>**best k will be=3**</code> (plot starts descending much more slowly after k=3)
+ * **Elbow Method using Inertia from kmeans** confirms that the <code>**elbow point k=2**</code> so the <code>**best k will be=3**</code> (plot starts descending much more slowly after k=3)
+ * **Elbow Method by calculating sum-of-squares error in each cluster against  𝐾 is similar when calculating .inertia from Kmeans** confirms that the <code>**elbow point k=2**</code> so the <code>**best k will be=3**</code> (plot starts descending much more slowly after k=3)
+
+
+
+
+
 
 
 
