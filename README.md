@@ -34,9 +34,6 @@ We now have an idea of what the dataset looks like. To further familiarize ourse
 <li>0.9 = very strong</li>
 </ul>
 
-![heatmap](https://user-images.githubusercontent.com/67468718/108630647-af108800-741a-11eb-9b2a-735a97cbd071.png)
-
-
 <p align="center">
   <img width="660" height="400" src="https://user-images.githubusercontent.com/67468718/108630647-af108800-741a-11eb-9b2a-735a97cbd071.png">
 </p>
@@ -56,7 +53,10 @@ The first two principal components enable visualization of the data in two dimen
 
 We will create a scatter plot of the first principle components and explore how the states cluster together in this visualization.
 
-![PCA clusters](https://user-images.githubusercontent.com/67468718/108630649-afa91e80-741a-11eb-98f7-0281ba9f9e27.png)
+
+<p align="center">
+  <img width="660" height="400" src="https://user-images.githubusercontent.com/67468718/108630649-afa91e80-741a-11eb-98f7-0281ba9f9e27.png">
+</p>
 
 ## 7. Modeliing: K-Means Clustering (Choosing K):
 
