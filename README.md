@@ -38,7 +38,7 @@ We now have an idea of what the dataset looks like. To further familiarize ourse
 
 
 <p align="center">
-  <img width="660" height="500" src="https://user-images.githubusercontent.com/67468718/108630647-af108800-741a-11eb-9b2a-735a97cbd071.png">
+  <img width="660" height="400" src="https://user-images.githubusercontent.com/67468718/108630647-af108800-741a-11eb-9b2a-735a97cbd071.png">
 </p>
 
 
