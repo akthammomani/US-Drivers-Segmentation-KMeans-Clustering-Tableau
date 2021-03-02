@@ -36,6 +36,12 @@ We now have an idea of what the dataset looks like. To further familiarize ourse
 
 ![heatmap](https://user-images.githubusercontent.com/67468718/108630647-af108800-741a-11eb-9b2a-735a97cbd071.png)
 
+
+<p align="center">
+  <img width="660" height="500" src="https://user-images.githubusercontent.com/67468718/108630647-af108800-741a-11eb-9b2a-735a97cbd071.png">
+</p>
+
+
 ## 5. Fit a multivariate linear regression
 
 From the correlation table, we see that the amount of fatal accidents is most strongly correlated with alcohol consumption (first row). But in addition, we also see that some of the features are correlated with each other, for instance, speeding and alcohol consumption are positively correlated. We, therefore, want to compute the association of the target with each feature while adjusting for the effect of the remaining features. This can be done using multivariate linear regression.
