@@ -71,11 +71,19 @@ Now, let's define the following:-
    * It is the sum of squared distances of samples to their closest cluster center. Typically, **inertia_ attribute from kmeans is used.**
    * Lastly, we look at the sum-of-squares error in each cluster against $K$. We compute the distance from each data point to the center of the cluster (centroid) to which the data point was assigned. 
 
-![Distortion_elbow](https://user-images.githubusercontent.com/67468718/108630644-ae77f180-741a-11eb-9d6e-a97850738b14.png)
 
-![elbow_inertia](https://user-images.githubusercontent.com/67468718/108630645-ae77f180-741a-11eb-80b5-1b4ea00f27b2.png)
+<p align="center">
+  <img width="660" height="400" src="https://user-images.githubusercontent.com/67468718/108630644-ae77f180-741a-11eb-9d6e-a97850738b14.png">
+</p>
 
-![SSE_elbow](https://user-images.githubusercontent.com/67468718/108630652-b041b500-741a-11eb-84d5-697b7526cef0.png)
+<p align="center">
+  <img width="660" height="400" src="https://user-images.githubusercontent.com/67468718/108630645-ae77f180-741a-11eb-80b5-1b4ea00f27b2.png">
+</p>
+
+<p align="center">
+  <img width="660" height="400" src="https://user-images.githubusercontent.com/67468718/108630652-b041b500-741a-11eb-84d5-697b7526cef0.png">
+</p>
+
 
 ## 8. Choosing K Summary:
 
